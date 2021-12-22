@@ -105,6 +105,11 @@ nav {
   font-size: 18px;
 }
 
+h1::first-letter {
+  font-style: normal;
+  margin-right: 5px;
+}
+
 article {
   margin-bottom: 60px;
 }
