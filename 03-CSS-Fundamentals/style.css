@@ -1,3 +1,12 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  border-top: 10px solid #1098ad;
+}
+
 h1,
 h2,
 h3,
@@ -46,6 +55,11 @@ p {
 li {
   font-size: 20px;
   font-family: sans-serif;
+  margin-bottom: 10px;
+}
+
+li:last-child {
+  margin-bottom: 0;
 }
 
 /* footer p {
@@ -72,6 +86,7 @@ li {
 
 .main-header {
   background-color: #f7f7f7;
+  padding: 20px 40px;
 }
 
 aside {
