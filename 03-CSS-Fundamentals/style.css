@@ -105,6 +105,16 @@ nav {
   font-size: 18px;
 }
 
+nav a:link {
+  margin-right: 30px;
+  margin-top: 10px;
+  display: inline-block;
+}
+
+nav a:link:last-child {
+  margin-right: 0;
+}
+
 h1::first-letter {
   font-style: normal;
   margin-right: 5px;
