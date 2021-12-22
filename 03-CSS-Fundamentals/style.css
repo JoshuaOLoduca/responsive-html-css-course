@@ -98,6 +98,7 @@ li:last-child {
   background-color: #f7f7f7;
   padding: 20px 40px;
   margin-bottom: 60px;
+  height: 80px;
 }
 
 nav {
@@ -117,6 +118,7 @@ aside {
   border-top: 5px solid #1098ad;
   border-bottom: 5px solid #1098ad;
   padding: 50px 0;
+  width: 500px;
 }
 
 a:link,
@@ -131,4 +133,9 @@ a:hover {
 
 a:active {
   color: #000;
+}
+
+.post-image {
+  width: 100%;
+  height: auto;
 }
