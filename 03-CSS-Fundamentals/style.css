@@ -30,17 +30,20 @@ h1 {
 }
 
 h2 {
-  font-style: 40px;
+  font-size: 40px;
   font-family: sans-serif;
+  margin-bottom: 30px;
 }
 
 h3 {
-  font-style: 30px;
+  font-size: 30px;
   font-family: sans-serif;
+  margin-bottom: 20px;
+  margin-top: 40px;
 }
 
 h4 {
-  font-style: 20px;
+  font-size: 20px;
   font-family: sans-serif;
   text-transform: uppercase;
   text-align: center;
@@ -50,6 +53,13 @@ p {
   font-size: 22px;
   font-family: sans-serif;
   line-height: 1.5;
+  margin-bottom: 15px;
+}
+
+ul,
+ol {
+  margin-left: 50px;
+  margin-bottom: 20px;
 }
 
 li {
@@ -87,12 +97,26 @@ li:last-child {
 .main-header {
   background-color: #f7f7f7;
   padding: 20px 40px;
+  margin-bottom: 60px;
+}
+
+nav {
+  font-size: 18px;
+}
+
+article {
+  margin-bottom: 60px;
+}
+
+.post-header {
+  margin-bottom: 40px;
 }
 
 aside {
   background-color: #f7f7f7;
   border-top: 5px solid #1098ad;
   border-bottom: 5px solid #1098ad;
+  padding: 50px 0;
 }
 
 a:link,
