@@ -139,3 +139,9 @@ a:active {
   width: 100%;
   height: auto;
 }
+
+.container {
+  /* width: 80%; */
+  width: 800px;
+  margin: 0 auto;
+}
