@@ -102,6 +102,10 @@ li:last-child {
   list-style: none;
 }
 
+.related-post {
+  display: flex;
+}
+
 .main-header {
   background-color: #f7f7f7;
   padding: 20px 40px;
