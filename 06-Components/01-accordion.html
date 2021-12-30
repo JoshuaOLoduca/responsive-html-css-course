@@ -59,7 +59,7 @@
       .accordian {
         width: 700px;
         margin: 100px auto;
-        background-color: var(--cultured);
+        /* background-color: var(--cultured); */
       }
 
       .number,
@@ -70,6 +70,14 @@
       }
 
       .item {
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+        border-top: 5px solid var(--celadon-green);
+        padding: 32px;
+
+        display: grid;
+        grid-template-columns: auto 1fr auto;
+        column-gap: 24px;
+        row-gap: 32px;
       }
 
       .number {
@@ -85,6 +93,7 @@
       }
 
       .hidden-box {
+        grid-column: 2;
       }
 
       .hidden-box p {
