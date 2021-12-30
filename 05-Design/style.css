@@ -5,6 +5,18 @@ Weights: 400, 500, 700
  */
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap");
 
+:root {
+  --skobeloff: #1a635e;
+  --dark-sienna: #36151e;
+  --dark-sienna-tint: #491d29;
+  --celadon-green: #22817b;
+  --cg-blue: #0c7797;
+  --cultured: #f2f5f8;
+
+  --almond: #ddc9b4;
+  --khaki-web: #bcac9b;
+}
+
 /*
 SPACING SYSTEM (px)
 2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
@@ -24,6 +36,8 @@ FONT SIZE SYSTEM (px)
 /* ------------------------ */
 body {
   font-family: "Inter", sans-serif;
+  color: var(--dark-sienna);
+  border-bottom: 8px solid var(--skobeloff);
 }
 
 .container {
@@ -46,6 +60,31 @@ h2 {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   column-gap: 80px;
+}
+
+.btn:link,
+.btn:visited {
+  display: inline-block;
+  color: #fff;
+  background-color: var(--skobeloff);
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.btn:hover,
+.btn:active {
+  background-color: var(--celadon-green);
+}
+
+.btn--small {
+  font-size: 14px;
+  padding: 8px 12px;
+}
+
+.btn--big {
+  font-size: 18px;
+  padding: 16px 23px;
 }
 
 /* ------------------------ */
@@ -98,6 +137,9 @@ img {
 
 /* TESTIMONIAL */
 .testimonial-section {
+  background-color: var(--skobeloff);
+  color: #fff;
+  padding: 24px;
 }
 
 .testimonial-box {
@@ -155,4 +197,5 @@ h3 {
 footer {
   margin-bottom: 48px;
   font-size: 14px;
+  color: var(--dark-sienna-tint);
 }
