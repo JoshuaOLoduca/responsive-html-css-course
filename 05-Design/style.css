@@ -6,6 +6,11 @@ Weights: 400, 500, 700
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap");
 
 :root {
+  /*
+  Colour Template
+
+  https://coolors.co/1a635e-ddc9b4-bcac9b-3a1721-271e34
+  */
   --skobeloff: #1a635e;
   --dark-sienna: #36151e;
   --dark-sienna-tint: #491d29;
@@ -14,7 +19,9 @@ Weights: 400, 500, 700
   --cultured: #f2f5f8;
 
   --almond: #ddc9b4;
+  --almond-rgb: 221, 201, 180;
   --khaki-web: #bcac9b;
+  --khaki-web-rgb: 188, 172, 155;
 }
 
 /*
@@ -99,6 +106,14 @@ header {
   grid-template-columns: repeat(2, 1fr);
   column-gap: 80px;
   margin-top: 64px;
+  background-color: var(--cultured);
+
+  border-radius: 12px;
+  padding: 10px;
+}
+
+header img {
+  box-shadow: 0 0px 30px 0 rgba(var(--almond-rgb), 0.2);
 }
 
 .header-text-box {
@@ -175,7 +190,7 @@ img {
 
 /* CHAIRS */
 .chair {
-  box-shadow: 0 10px 30px 0 rgba(0, 0, 0, 0.15);
+  box-shadow: 0 10px 30px 0 rgba(var(--khaki-web-rgb), 0.27);
   border-radius: 12px;
 }
 
