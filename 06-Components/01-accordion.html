@@ -60,27 +60,30 @@
         width: 700px;
         margin: 100px auto;
         /* background-color: var(--cultured); */
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
       }
 
       .number,
       .acordian-header {
-        color: var(--celadon-green);
         font-size: 24px;
         font-weight: 500;
       }
 
       .item {
         box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
-        border-top: 5px solid var(--celadon-green);
         padding: 32px;
 
         display: grid;
         grid-template-columns: auto 1fr auto;
         column-gap: 24px;
         row-gap: 32px;
+        align-items: center;
       }
 
       .number {
+        color: var(--dark-sienna-tint);
       }
 
       .acordian-header {
@@ -94,11 +97,25 @@
 
       .hidden-box {
         grid-column: 2;
+
+        display: none;
       }
 
       .hidden-box p {
         padding-bottom: 24px;
         line-height: 1.6;
+      }
+
+      .open {
+        border-top: 5px solid var(--celadon-green);
+      }
+      .open .number,
+      .open .acordian-header {
+        color: var(--celadon-green);
+      }
+
+      .open .hidden-box {
+        display: initial;
       }
 
       ul {
@@ -114,6 +131,42 @@
   <body>
     <div class="accordian">
       <div class="item">
+        <p class="number">01</p>
+        <p class="acordian-header">Where are these chairs assembled?</p>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="icon"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M19 9l-7 7-7-7"
+          />
+        </svg>
+        <div class="hidden-box">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia magni
+            perspiciatis officia illum quaerat laborum non fugiat esse velit
+            laboriosam. Libero accusantium illum ipsum a quaerat dolorum ut
+            totam itaque!
+          </p>
+
+          <ul>
+            <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</li>
+            <li>
+              Et esse qui aspernatur, veniam maxime consectetur praesentium
+            </li>
+            <li>eum ea modi maiores impedit molestiae pariatur</li>
+            <li>saepe perspiciatis iure! Est quasi iusto quo</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="item open">
         <p class="number">02</p>
         <p class="acordian-header">How long do I have to return my chair</p>
         <svg
@@ -139,7 +192,43 @@
           </p>
 
           <ul>
-            <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit..</li>
+            <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</li>
+            <li>
+              Et esse qui aspernatur, veniam maxime consectetur praesentium
+            </li>
+            <li>eum ea modi maiores impedit molestiae pariatur</li>
+            <li>saepe perspiciatis iure! Est quasi iusto quo</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="item">
+        <p class="number">03</p>
+        <p class="acordian-header">Do you ship to countries outside the EU?</p>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="icon"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M19 9l-7 7-7-7"
+          />
+        </svg>
+        <div class="hidden-box">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia magni
+            perspiciatis officia illum quaerat laborum non fugiat esse velit
+            laboriosam. Libero accusantium illum ipsum a quaerat dolorum ut
+            totam itaque!
+          </p>
+
+          <ul>
+            <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</li>
             <li>
               Et esse qui aspernatur, veniam maxime consectetur praesentium
             </li>
