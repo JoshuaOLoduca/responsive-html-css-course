@@ -63,6 +63,7 @@
       }
 
       .carousel {
+        position: relative;
         border-radius: 8px;
         width: 800px;
         background-color: var(--skobeloff);
@@ -78,7 +79,6 @@
       .testimonial {
       }
 
-      
       .testimonial-text {
         color: var(--cultured);
         font-weight: 500;
@@ -96,16 +96,34 @@
         color: var(--khaki-web);
       }
 
+      /* controls */
+
+      .btn {
+        background-color: #fff;
+        height: 40px;
+        width: 40px;
+        border: none;
+        position: absolute;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .btn--left {
+        left: 0;
+      }
+      .btn--right {
+        right: 0;
+      }
+
       .icon {
         height: 24px;
         width: 24px;
         stroke: var(--skobeloff);
 
-        background-color: white;
-        border-radius: 10000px;
+        /* border-radius: 10000px; */
       }
-
-      /* controls */
     </style>
   </head>
   <body>
@@ -120,34 +138,39 @@
         <p class="testimonial-author">Maria de Almeida</p>
         <p class="testimonial-job">Senior Product Manager at EDP Comercial</p>
       </blockquote>
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        class="icon"
-        fill="none"
-        viewBox="0 0 24 24"
-        stroke="currentColor"
-      >
-        <path
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          stroke-width="2"
-          d="M15 19l-7-7 7-7"
-        />
-      </svg>
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        class="icon"
-        fill="none"
-        viewBox="0 0 24 24"
-        stroke="currentColor"
-      >
-        <path
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          stroke-width="2"
-          d="M9 5l7 7-7 7"
-        />
-      </svg>
+      <button class="btn btn--left">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="icon"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M15 19l-7-7 7-7"
+          />
+        </svg>
+      </button>
+
+      <button class="btn btn--right">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="icon"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M9 5l7 7-7 7"
+          />
+        </svg>
+      </button>
     </div>
   </body>
 </html>
