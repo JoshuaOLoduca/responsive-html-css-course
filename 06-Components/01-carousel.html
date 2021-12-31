@@ -71,6 +71,7 @@
         background-color: var(--skobeloff);
         padding: 32px;
         padding-left: 86px;
+        padding-right: 48px;
         margin: 100px auto;
         display: flex;
 
@@ -132,8 +133,28 @@
         height: 24px;
         width: 24px;
         stroke: var(--skobeloff);
+      }
 
-        /* border-radius: 10000px; */
+      .dots {
+        position: absolute;
+        left: 50%;
+        bottom: 0;
+        transform: translate(-50%, 32px);
+        display: flex;
+        gap: 8px;
+      }
+
+      .dot {
+        width: 12px;
+        height: 12px;
+        border: 2px solid var(--skobeloff);
+        border-radius: 50%;
+        background-color: #fff;
+        cursor: pointer;
+      }
+
+      .dot--fill {
+        background-color: var(--skobeloff);
       }
     </style>
   </head>
@@ -182,6 +203,12 @@
           />
         </svg>
       </button>
+      <div class="dots">
+        <button class="dot dot--fill">&nbsp;</button>
+        <button class="dot">&nbsp;</button>
+        <button class="dot">&nbsp;</button>
+        <button class="dot">&nbsp;</button>
+      </div>
     </div>
   </body>
 </html>
