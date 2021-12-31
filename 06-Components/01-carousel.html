@@ -55,7 +55,99 @@
         color: var(--dark-sienna);
         line-height: 1;
       }
+
+      img {
+        height: 200px;
+        border-radius: 8px;
+        transform: scale(1.5);
+      }
+
+      .carousel {
+        border-radius: 8px;
+        width: 800px;
+        background-color: var(--skobeloff);
+        padding: 32px;
+        padding-left: 86px;
+        margin: 100px auto;
+        display: flex;
+
+        align-items: center;
+        gap: 86px;
+      }
+
+      .testimonial {
+      }
+
+      
+      .testimonial-text {
+        color: var(--cultured);
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 1.5;
+        margin-bottom: 32px;
+      }
+      .testimonial-author {
+        color: var(--almond);
+        font-size: 14px;
+        margin-bottom: 4px;
+      }
+      .testimonial-job {
+        font-size: 12px;
+        color: var(--khaki-web);
+      }
+
+      .icon {
+        height: 24px;
+        width: 24px;
+        stroke: var(--skobeloff);
+
+        background-color: white;
+        border-radius: 10000px;
+      }
+
+      /* controls */
     </style>
   </head>
-  <body></body>
+  <body>
+    <div class="carousel">
+      <img src="maria.jpg" alt="MArio de Almeida" />
+      <blockquote class="testimonial">
+        <p class="testimonial-text">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit
+          recusandae exercitationem, voluptate nesciunt qui voluptatem mollitia
+          necessitatibus omnis quos distinctio, delectus
+        </p>
+        <p class="testimonial-author">Maria de Almeida</p>
+        <p class="testimonial-job">Senior Product Manager at EDP Comercial</p>
+      </blockquote>
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        class="icon"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke="currentColor"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          d="M15 19l-7-7 7-7"
+        />
+      </svg>
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        class="icon"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke="currentColor"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          d="M9 5l7 7-7 7"
+        />
+      </svg>
+    </div>
+  </body>
 </html>
