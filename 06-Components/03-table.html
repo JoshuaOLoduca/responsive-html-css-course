@@ -54,21 +54,51 @@
         font-family: "Inter", sans-serif;
         color: var(--dark-sienna);
         line-height: 1;
+
+        display: flex;
+        justify-content: center;
+      }
+
+      table {
+        margin-top: 100px;
+        width: 800px;
+        /* border: 1px solid #808080; */
+        border-collapse: collapse;
+        font-size: 18px;
+      }
+
+      th,
+      td {
+        /* border: 1px solid #808080; */
+        padding: 16px 24px;
+        text-align: left;
+      }
+
+      thead th {
+        background-color: var(--skobeloff);
+        color: #fff;
+        width: 25%;
+      }
+      tbody tr:nth-child(odd) {
+        background-color: #f8f9fa;
+      }
+      tbody tr:nth-child(even) {
+        background-color: #e9ecef;
       }
     </style>
   </head>
   <body>
     <table>
-      <thhead>
+      <thead>
         <tr>
           <th>Chair</th>
           <th>The Laid Back</th>
           <th>The Worker Bee</th>
           <th>The Chair 4/2</th>
         </tr>
-      </thhead>
+      </thead>
 
-      <thbody>
+      <tbody>
         <tr>
           <th>Width</th>
           <td>80 cm</td>
@@ -93,7 +123,7 @@
           <td>22 kg</td>
           <td>80 kg</td>
         </tr>
-      </thbody>
+      </tbody>
     </table>
   </body>
 </html>
