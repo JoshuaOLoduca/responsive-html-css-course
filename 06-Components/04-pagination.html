@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Carousel Component</title>
+
+    <style>
+      /*
+      font-family: 'Inter', sans-serif;
+      Weights: 400, 500, 700
+               Reg  Med  Bold
+      */
+      @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap");
+
+      :root {
+        /*
+        Colour Template
+
+        https://coolors.co/1a635e-ddc9b4-bcac9b-3a1721-271e34
+        */
+        --skobeloff: #1a635e;
+        --dark-sienna: #36151e;
+        --dark-sienna-tint: #765760;
+        --celadon-green: #22817b;
+        --cg-blue: #0c7797;
+        --cultured: #f2f5f8;
+
+        --almond: #ddc9b4;
+        --almond-rgb: 221, 201, 180;
+        --khaki-web: #bcac9b;
+        --khaki-web-rgb: 188, 172, 155;
+      }
+
+      /*
+      SPACING SYSTEM (px)
+      2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+      FONT SIZE SYSTEM (px)
+      10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+      */
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      /* ------------------------ */
+      /* GENERAL STYLES */
+      /* ------------------------ */
+      body {
+        font-family: "Inter", sans-serif;
+        color: var(--dark-sienna);
+        line-height: 1;
+
+        display: flex;
+        justify-content: center;
+      }
+
+      .pagination {
+        margin: 100px auto;
+        position: relative;
+        padding-right: 12px;
+        padding-left: 12px;
+      }
+
+      button {
+        background-color: #fff;
+        border: none;
+      }
+
+      .btn {
+        width: 52px;
+        height: 52px;
+        position: absolute;
+        top: 50%;
+        border: 1px solid var(--skobeloff);
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        cursor: pointer;
+      }
+      .btn--left {
+        left: 0;
+        transform: translate(-100%, -50%);
+      }
+      .btn--right {
+        right: 0;
+        transform: translate(100%, -50%);
+      }
+      .btn-icon {
+        width: 24px;
+        height: 24px;
+        stroke: var(--skobeloff);
+      }
+      .pages {
+        display: flex;
+        gap: 16px;
+      }
+      .page {
+        font-size: 18px;
+        border-radius: 50%;
+        width: 32px;
+        height: 32px;
+        cursor: pointer;
+      }
+      .page--fill {
+        background-color: var(--skobeloff);
+        color: #fff;
+      }
+      .page--collapse {
+        color: #868686;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="pagination">
+      <div class="pages">
+        <button class="page">1</button>
+        <button class="page">2</button>
+        <button class="page page--fill">3</button>
+        <button class="page">4</button>
+        <button class="page">5</button>
+        <button class="page">6</button>
+        <button class="page page--collapse">...</button>
+        <button class="page">23</button>
+      </div>
+      <button class="btn btn--left">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="btn-icon"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M15 19l-7-7 7-7"
+          />
+        </svg>
+      </button>
+
+      <button class="btn btn--right">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="btn-icon"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M9 5l7 7-7 7"
+          />
+        </svg>
+      </button>
+    </div>
+  </body>
+</html>
