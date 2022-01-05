@@ -53,15 +53,49 @@
 
       html {
         font-family: "Rubik", sans-serif;
+        color: #444;
       }
 
       nav {
+        font-size: 20px;
+        font-weight: 700;
         display: flex;
         justify-content: space-between;
+        padding-top: 32px;
       }
 
       header {
         height: 100vh;
+        position: relative;
+
+        background-image: linear-gradient(
+            rgba(34, 34, 34, 0.6),
+            rgba(34, 34, 34, 0.5)
+          ),
+          url("hero.jpg");
+        background-size: cover;
+        color: #fff;
+      }
+
+      section {
+        padding: 96px 0;
+      }
+
+      h1 {
+        font-size: 52px;
+        margin-bottom: 32px;
+        line-height: 1.05;
+      }
+
+      h2 {
+        font-size: 44px;
+        margin-bottom: 48px;
+      }
+
+      p {
+        font-size: 20px;
+        line-height: 1.6;
+        margin-bottom: 48px;
       }
 
       /* Classes */
@@ -70,14 +104,32 @@
         margin: 0 auto;
       }
 
+      .header-container-inner {
+        width: 50%;
+      }
+
+      .header-container {
+        width: 1200px;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+      }
+
       .btn:link,
       .btn:visited {
         text-decoration: none;
-        color: #f7f7f7;
-        background-color: orangered;
+        color: #fff;
+        background-color: #e67e22;
         padding: 16px 32px;
         display: inline-block;
+
+        font-weight: 600;
+        font-size: 20px;
+        border-radius: 9px;
       }
+
+      /* Layouts */
     </style>
   </head>
   <body>
@@ -87,26 +139,30 @@
         <div>NAVIGATION</div>
       </nav>
 
-      <div class="container">
-        <h1>A healthy meal delivered to your door, every single day</h1>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis
-          possimus tempore distinctio autem quis eos sed hic pariatur!
-          Cupiditate aliquam consequatur totam quam voluptas, inventore velit
-          officiis tempora explicabo aspernatur.
-        </p>
-        <a href="#" class="btn">Click here</a>
+      <div class="header-container">
+        <div class="header-container-inner">
+          <h1>A healthy meal delivered to your door, every single day</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis
+            possimus tempore distinctio autem quis eos sed hic pariatur!
+            Cupiditate aliquam consequatur totam quam voluptas, inventore velit
+            officiis tempora explicabo aspernatur.
+          </p>
+          <a href="#" class="btn">Start eating well</a>
+        </div>
       </div>
     </header>
 
     <section class="container">
-      <h2>Some random heading</h2>
-      <p>
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga quos
-        suscipit quasi architecto voluptates dolorum labore earum accusantium ad
-        praesentium, omnis, numquam harum dignissimos minus odit velit tenetur
-        eaque beatae.
-      </p>
+      <div class="container">
+        <h2>Some random heading</h2>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga quos
+          suscipit quasi architecto voluptates dolorum labore earum accusantium
+          ad praesentium, omnis, numquam harum dignissimos minus odit velit
+          tenetur eaque beatae.
+        </p>
+      </div>
     </section>
   </body>
 </html>
