@@ -59,21 +59,54 @@
         display: flex;
         justify-content: space-between;
       }
+
+      header {
+        height: 100vh;
+      }
+
+      /* Classes */
+      .container {
+        width: 1200px;
+        margin: 0 auto;
+      }
+
+      .btn:link,
+      .btn:visited {
+        text-decoration: none;
+        color: #f7f7f7;
+        background-color: orangered;
+        padding: 16px 32px;
+        display: inline-block;
+      }
     </style>
   </head>
   <body>
     <header>
-      <nav>
+      <nav class="container">
         <div>LOGO</div>
         <div>NAVIGATION</div>
       </nav>
 
-      <div>
-        <h1></h1>
-        <p></p>
+      <div class="container">
+        <h1>A healthy meal delivered to your door, every single day</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis
+          possimus tempore distinctio autem quis eos sed hic pariatur!
+          Cupiditate aliquam consequatur totam quam voluptas, inventore velit
+          officiis tempora explicabo aspernatur.
+        </p>
+        <a href="#" class="btn">Click here</a>
       </div>
     </header>
 
-    <section></section>
+    <section class="container">
+      <h2>Some random heading</h2>
+      <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga quos
+        suscipit quasi architecto voluptates dolorum labore earum accusantium ad
+        praesentium, omnis, numquam harum dignissimos minus odit velit tenetur
+        eaque beatae.
+      </p>
+    </section>
   </body>
 </html>
