@@ -134,7 +134,38 @@
 }
 
 .step-img {
-  width: 50%;
+  width: 40%;
+}
+
+.step-img-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.step-img-box::before,
+.step-img-box::after {
+  position: absolute;
+  content: "";
+  display: block;
+  border-radius: 50%;
+}
+
+.step-img-box::before {
+  width: 70%;
+  padding-bottom: 70%;
+  background-color: #fdf2e9;
+  z-index: -2;
+}
+
+.step-img-box::after {
+  width: 55%;
+  padding-bottom: 55%;
+  background-color: #fae5d3;
+  z-index: -1;
+
+  /* box-shadow: 0 0 2rem 2rem rgba(250, 229, 211, 0.842); */
 }
 
 .step-number {
@@ -145,4 +176,6 @@
 }
 
 .step-description {
+  font-size: 1.8rem;
+  line-height: 1.8;
 }
