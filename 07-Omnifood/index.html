@@ -17,11 +17,13 @@
       </a>
       <nav class="main-nav">
         <ul class="main-nav-list">
-          <li><a href="#" class="main-nav-link">Section 1</a></li>
-          <li><a href="#" class="main-nav-link">Section 2</a></li>
-          <li><a href="#" class="main-nav-link">Section 3</a></li>
-          <li><a href="#" class="main-nav-link">Section 4</a></li>
-          <li><a href="#" class="main-nav-link nav-cta">Section 5</a></li>
+          <li><a href="#how" class="main-nav-link">How it works</a></li>
+          <li><a href="#meals" class="main-nav-link">Meals</a></li>
+          <li>
+            <a href="#testimonials" class="main-nav-link">Testimonials</a>
+          </li>
+          <li><a href="#pricing" class="main-nav-link">Pricing</a></li>
+          <li><a href="#cta" class="main-nav-link nav-cta">Try for free</a></li>
         </ul>
       </nav>
     </header>
@@ -101,7 +103,7 @@
 
       <section class="section-how">
         <div class="container">
-          <span class="sub-heading">How it works</span>
+          <span class="sub-heading" id="how">How it works</span>
           <h2 class="heading-secondary">
             Your daily dose of health in 3 simple steps
           </h2>
@@ -170,7 +172,7 @@
 
       <section class="section-meals">
         <div class="container center-text">
-          <span class="sub-heading">Meals</span>
+          <span class="sub-heading" id="meals">Meals</span>
           <h2 class="heading-secondary">
             Omnifood AI chooses from 5,000+ recipes
           </h2>
@@ -314,7 +316,7 @@
 
       <section class="section-test-gallary">
         <div class="testimonials-container">
-          <span class="sub-heading">Testimonials</span>
+          <span class="sub-heading" id="testimonials">Testimonials</span>
           <h2 class="heading-secondary">Once you try it, you cant go back</h2>
           <div class="testimonials">
             <div class="testimonial">
@@ -470,7 +472,7 @@
 
       <section class="section-price">
         <div class="container">
-          <span class="sub-heading">Pricing</span>
+          <span class="sub-heading" id="pricing">Pricing</span>
           <h2 class="heading-secondary">
             Eating well without breaking the bank
           </h2>
@@ -533,7 +535,7 @@
             </div>
           </div>
         </div>
-        <div class="container center-text margin-top-md">
+        <div class="container center-text margin-top-md grid">
           <aside class="plan-details">
             Prices include all applicable taxes. Users can cancel at any time.
             Both plans include the following:
@@ -583,7 +585,9 @@
         <div class="container">
           <div class="cta">
             <div class="cta-text-box">
-              <h2 class="heading-secondary">Get your first meal for free!</h2>
+              <h2 class="heading-secondary" id="cta">
+                Get your first meal for free!
+              </h2>
               <p class="cta-text">
                 Healthy, tasty and hassle-free meals are waiting for you. Start
                 eating well today. You can cancel or pause anytime. And the
@@ -637,7 +641,7 @@
     </main>
 
     <footer class="footer">
-      <div class="container grid grid--5-cols">
+      <div class="container grid grid--footer">
         <div class="logo-col">
           <a href="#" class="footer-logo">
             <img class="logo" src="img/omnifood-logo.png" alt="Omnifood Logo" />
@@ -645,64 +649,68 @@
 
           <ul class="social-links">
             <li>
-              <a href="#">
+              <a class="footer-link" href="#">
                 <ion-icon name="logo-instagram" class="social-icon"></ion-icon>
               </a>
             </li>
             <li>
-              <a href="#">
+              <a class="footer-link" href="#">
                 <ion-icon name="logo-facebook" class="social-icon"></ion-icon>
               </a>
             </li>
             <li>
-              <a href="#">
+              <a class="footer-link" href="#">
                 <ion-icon name="logo-twitter" class="social-icon"></ion-icon>
               </a>
             </li>
           </ul>
 
           <p class="copyright">
-            <p class="footer-heading">Contact us</p>
             Copyright &copy; 2027 by Omnifood, inc. All rights reserved.
           </p>
         </div>
         <div class="address-col">
-          <address class="contacts">            
-            <p>Address: 623 Harrison St., 2nd Floor, San Francisco, CA 94107</p>
-            <a href="tel:415-201-6370">Phone:415-201-6370</a>
+          <p class="footer-heading">Contact us</p>
+          <address class="contacts">
+            <p class="address">
+              Address: 623 Harrison St., 2nd Floor, San Francisco, CA 94107
+            </p>
+            <a class="footer-link" href="tel:415-201-6370">415-201-6370</a>
             <br />
-            <a href="mailto:hello@omnifood.com">Email: hello@omnifood.com</a>
+            <a class="footer-link" href="mailto:hello@omnifood.com"
+              >hello@omnifood.com</a
+            >
           </address>
-          </div>
+        </div>
 
-          <nav class="nav-col">
-            <p class="footer-heading">Company</p>
-            <ul class="footer-nav">
-              <li><a href="#">About Omnifood</a></li>
-              <li><a href="#">For Business</a></li>
-              <li><a href="#">Cooking Partners</a></li>
-              <li><a href="#">Careers</a></li>
-            </ul>
-          </nav>
+        <nav class="nav-col">
+          <p class="footer-heading">Company</p>
+          <ul class="footer-nav">
+            <li><a class="footer-link" href="#">About Omnifood</a></li>
+            <li><a class="footer-link" href="#">For Business</a></li>
+            <li><a class="footer-link" href="#">Cooking Partners</a></li>
+            <li><a class="footer-link" href="#">Careers</a></li>
+          </ul>
+        </nav>
 
-          <nav class="nav-col">
-            <p class="footer-heading">Account</p>
-            <ul class="footer-nav">
-              <li><a href="#">Create account</a></li>
-              <li><a href="#">Sign in</a></li>
-              <li><a href="#">iOS app</a></li>
-              <li><a href="#">Android app</a></li>
-            </ul>
-          </nav>
+        <nav class="nav-col">
+          <p class="footer-heading">Account</p>
+          <ul class="footer-nav">
+            <li><a class="footer-link" href="#">Create account</a></li>
+            <li><a class="footer-link" href="#">Sign in</a></li>
+            <li><a class="footer-link" href="#">iOS app</a></li>
+            <li><a class="footer-link" href="#">Android app</a></li>
+          </ul>
+        </nav>
 
-          <nav class="nav-col">
-            <p class="footer-heading">Resources</p>
-            <ul class="footer-nav">
-              <li><a href="#">Recipe directory</a></li>
-              <li><a href="#">Help center</a></li>
-              <li><a href="#">Privacy & terms</a></li>
-            </ul>
-          </nav>
+        <nav class="nav-col">
+          <p class="footer-heading">Resources</p>
+          <ul class="footer-nav">
+            <li><a class="footer-link" href="#">Recipe directory</a></li>
+            <li><a class="footer-link" href="#">Help center</a></li>
+            <li><a class="footer-link" href="#">Privacy & terms</a></li>
+          </ul>
+        </nav>
       </div>
     </footer>
 
