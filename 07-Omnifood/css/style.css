@@ -13,7 +13,7 @@
            Reg  Med  Semi Bold
 
 - Line Heights
-Default: 1
+Default: 1, 1.05, 1.6
 
 --- 02 COLORS
 
@@ -119,10 +119,49 @@ body {
   margin-right: 1.6rem !important;
 }
 
-/* HEADER */
+/* NAVIGATION */
 
 .main-nav {
 }
+
+.main-nav-list {
+  display: flex;
+  list-style: none;
+  gap: 3.2rem;
+
+  align-items: center;
+}
+
+.main-nav-link:link,
+.main-nav-link:visited {
+  display: inline-block;
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  font-size: 1.8rem;
+
+  transition: all 0.3s;
+}
+
+.main-nav-link:hover,
+.main-nav-link:active {
+  color: #cf711f;
+}
+
+.main-nav-link.nav-cta:link,
+.main-nav-link.nav-cta:visited {
+  padding: 1.2rem 2.4rem;
+  border-radius: 0.6rem;
+  background-color: #e67e22;
+  color: #fff;
+}
+
+.main-nav-link.nav-cta:hover,
+.main-nav-link.nav-cta:active {
+  background-color: #cf711f;
+}
+
+/* HEADER */
 
 .logo {
   height: 2.2rem;
