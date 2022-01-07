@@ -39,7 +39,7 @@ use EM insteaf of rem for media queries
     font-size: 3.6rem;
   }
 
-  .heading-terrtiary {
+  .heading-tertiary {
     font-size: 2.4rem;
   }
 
@@ -57,5 +57,65 @@ use EM insteaf of rem for media queries
 
   .testimonials-container {
     padding: 9.6rem 3.2rem;
+  }
+}
+
+/* Below 944px */
+@media (max-width: 59em) {
+  html {
+    font-size: 50%;
+  }
+
+  .hero-container {
+    grid-template-columns: 1fr;
+
+    padding: 0 8rem;
+    gap: 6.4rem;
+  }
+
+  .hero-text-box,
+  .hero-img-box {
+    text-align: center;
+  }
+
+  .hero-img {
+    width: 60%;
+  }
+
+  .delivered-meals {
+    margin-top: 3.2rem;
+    justify-content: center;
+  }
+
+  .featured-img {
+    height: 2.4rem;
+  }
+
+  .step-number {
+    font-size: 7.4rem;
+  }
+
+  .meal-content {
+    padding: 2.4rem 0 3.2rem 0;
+  }
+
+  .section-test-gallary {
+    grid-template-columns: 1fr;
+  }
+
+  .gallary {
+    grid-template-columns: repeat(6, 1fr);
+  }
+
+  .cta {
+    grid-template-columns: 3fr 2fr;
+  }
+
+  .cta-form {
+    grid-template-columns: 1fr;
+  }
+
+  .btn--form {
+    margin-top: 1.2rem;
   }
 }
