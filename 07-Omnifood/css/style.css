@@ -323,3 +323,13 @@
   text-align: center;
   font-size: 1.8rem;
 }
+
+/* Gallary and testimonial section */
+
+.section-test-gallary {
+  background-color: thistle;
+}
+
+.gallary-img {
+  width: 100%;
+}
