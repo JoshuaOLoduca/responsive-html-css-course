@@ -152,7 +152,7 @@ body {
 
 .btn--full:link,
 .btn--full:visited {
-  background-color: #cf711f;
+  background-color: #e67e22;
   color: #fff;
 }
 
@@ -176,4 +176,8 @@ body {
 
 .margin-right-sm {
   margin-right: 1.6rem !important;
+}
+
+strong {
+  font-weight: 500;
 }
