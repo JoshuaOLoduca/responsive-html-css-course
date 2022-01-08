@@ -1,6 +1,13 @@
-let cpYear = document.querySelector("#copyright-year");
-let currentYear = new Date().getFullYear();
-cpYear.textContent = currentYear;
+function updateCopyrightYear() {
+  updateElmText(
+    document.querySelector("#copyright-year"),
+    new Date().getFullYear()
+  );
+}
+
+function updateElmText(elm, text) {
+  elm.textContent = text;
+}
 
 ///////////////////////////////////////////////////////////
 // Fixing flexbox gap property missing in some Safari versions
@@ -21,6 +28,7 @@ function checkFlexGap() {
   if (!isSupported) document.body.classList.add("no-flexbox-gap");
 }
 checkFlexGap();
+updateCopyrightYear();
 
 // alert("test");
 
