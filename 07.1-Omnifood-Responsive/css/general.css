@@ -60,6 +60,7 @@ Default: 1, 1.05, 1.6, 1.2
 
 html {
   font-size: 62.5%;
+  overflow-x: hidden;
 }
 
 /* ------------------------ */
@@ -71,6 +72,7 @@ body {
   font-family: "Rubik", sans-serif;
   font-weight: 400;
   color: #555;
+  overflow-x: hidden;
 }
 
 /* *********** */
