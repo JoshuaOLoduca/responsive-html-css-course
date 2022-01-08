@@ -32,7 +32,7 @@ use EM insteaf of rem for media queries
 
   .grid {
     column-gap: 4.8rem;
-    row-gap: 6.4;
+    row-gap: 6.4rem;
   }
 
   .heading-secondary {
@@ -205,5 +205,83 @@ use EM insteaf of rem for media queries
   .address-col,
   .logo-col {
     grid-column: span 3;
+  }
+}
+
+/* For screens smaller than 544px */
+@media (max-width: 34em) {
+  .grid--2-cols,
+  .grid--3-cols,
+  .grid--4-cols,
+  .grid--5-cols,
+  .testimonials {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .gallary {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.2rem;
+  }
+
+  .testimonials {
+    row-gap: 6.4rem;
+  }
+
+  .testimonials-container {
+    padding-bottom: 6.4rem;
+  }
+
+  .grid {
+    row-gap: 4.8rem;
+  }
+
+  .section-hero {
+    padding: 2.4rem 0 6.2rem 0;
+  }
+
+  .hero-container {
+    padding: 0 2.4rem;
+  }
+
+  .hero {
+    padding: 0 3.2rem;
+  }
+
+  .btn,
+  .btn:link,
+  .btn:visited {
+    /* text-decoration: none; */
+    /* font-size: 2rem; */
+    /* font-weight: 600; */
+    padding: 2.4rem 1.6rem;
+  }
+
+  .featured-img {
+    height: 1.2rem;
+  }
+
+  .step-img-box:nth-child(2) {
+    grid-row: 1;
+  }
+
+  .step-img-box:nth-child(6) {
+    grid-row: 5;
+  }
+
+  .step-img-box {
+    transform: translateY(6.4rem);
+  }
+
+  .cta {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .cta-text-box {
+    padding: 3.2rem;
+  }
+
+  .cta-img-box {
+    height: 32rem;
+    grid-row: 1;
   }
 }
