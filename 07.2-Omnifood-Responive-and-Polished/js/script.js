@@ -9,6 +9,11 @@ function updateElmText(elm, text) {
   elm.textContent = text;
 }
 
+var mobileNavIcon = document.querySelector(".btn-mobile-nav");
+mobileNavIcon.addEventListener("click", (e) => {
+  e.target.parentNode.parentNode.classList.toggle("nav-open");
+});
+
 ///////////////////////////////////////////////////////////
 // Fixing flexbox gap property missing in some Safari versions
 function checkFlexGap() {
