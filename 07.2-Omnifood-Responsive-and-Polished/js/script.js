@@ -9,10 +9,57 @@ function updateElmText(elm, text) {
   elm.textContent = text;
 }
 
+const headerEl = document.querySelector('.header')
+
 var mobileNavIcon = document.querySelector(".btn-mobile-nav");
 mobileNavIcon.addEventListener("click", (e) => {
-  e.target.parentNode.parentNode.classList.toggle("nav-open");
+  headerEl.classList.toggle("nav-open");
 });
+
+/////////////////////////////
+// Smooth scrolling
+/////////////////////////////
+const allLinks = document.querySelectorAll('a:link');
+
+allLinks.forEach(link => {
+  link.addEventListener('click', e => {
+    e.preventDefault();
+    const href = link.getAttribute('href');
+
+    // scroll to other links
+    if (href === '#') {
+      window.scroll({
+        top: 0,
+        behavior: "smooth",
+      });
+    } else {
+      const el = document.querySelector(href);
+      el.scrollIntoView({behavior: "smooth"});
+    }
+
+    // close navigation
+    if(link.classList.contains('main-nav-link')) headerEl.classList.toggle("nav-open");
+  })
+});
+
+
+/////////////////////////////
+// Stick Header when you leave hero section
+/////////////////////////////
+const sectionHero = document.querySelector('.section-hero');
+
+const observer = new IntersectionObserver((entries) => {
+  const ent = entries[0];
+  if (ent.isIntersecting) document.body.classList.remove("sticky");
+  else document.body.classList.add("sticky");
+}, {
+  //watch the viewport for the element
+  root: null,
+  //fire event when 0% of the element is in the viewport
+  // and 1 = 100%
+  threshold: 0,
+});
+observer.observe(sectionHero);
 
 ///////////////////////////////////////////////////////////
 // Fixing flexbox gap property missing in some Safari versions
