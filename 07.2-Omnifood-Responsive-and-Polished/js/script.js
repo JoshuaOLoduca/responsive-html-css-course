@@ -58,6 +58,9 @@ const observer = new IntersectionObserver((entries) => {
   //fire event when 0% of the element is in the viewport
   // and 1 = 100%
   threshold: 0,
+  //offsets element position
+  //negative moves the element up, so it leaves the observer sooner
+  rootMargin: '-80px'
 });
 observer.observe(sectionHero);
 
