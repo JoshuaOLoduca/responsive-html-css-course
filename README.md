@@ -59,3 +59,7 @@ Full single page development and design\
 1. [Layout Complete](https://joshuaoloduca.github.io/responsive-html-css-course/07-Omnifood/)
 1. [Added Responsiveness](https://joshuaoloduca.github.io/responsive-html-css-course/07.1-Omnifood-Responsive/)
 1. [Added Javascripting and Polish/Optimization](https://joshuaoloduca.github.io/responsive-html-css-course/07.2-Omnifood-Responsive-and-Polished/)
+
+
+# Certificate
+![Udemy course completion certificate](https://udemy-certificate.s3.amazonaws.com/image/UC-5b2210c1-2c6c-4d42-9857-79fd01adb006.jpg?v=1642127074000)
