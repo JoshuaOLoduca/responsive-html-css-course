@@ -54,7 +54,7 @@ Component creation with 1 page design\
 
 ## Project 7
 
-Full single page development and design\
+Full single page development and design
 1. [Starting files](https://github.com/JoshuaOLoduca/responsive-html-css-course/tree/main/Project%20Materials/html-css-course-master/starter/07-Omnifood-Desktop/content)
 1. [Layout Complete](https://joshuaoloduca.github.io/responsive-html-css-course/07-Omnifood/)
 1. [Added Responsiveness](https://joshuaoloduca.github.io/responsive-html-css-course/07.1-Omnifood-Responsive/)
